@@ -12,6 +12,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, userName }) => {
     setIsAuthenticated(false);
     localStorage.removeItem('isAuthenticated');
     localStorage.removeItem('userName');
+    localStorage.removeItem('enrolledCourses'); // ✅ Clear enrolled data on logout
     navigate('/');
   };
 
@@ -63,18 +64,11 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, userName }) => {
             </li>
 
             {isAuthenticated && (
-              <>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/dashboard" onClick={() => setShowMenu(false)}>
-                    Dashboard
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/my-journey" onClick={() => setShowMenu(false)}>
-                    My Journey
-                  </Link>
-                </li>
-              </>
+              <li className="nav-item">
+                <Link className="nav-link" to="/my-journey" onClick={() => setShowMenu(false)}>
+                  My Journey
+                </Link>
+              </li>
             )}
 
             {isAuthenticated ? (
@@ -105,7 +99,13 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated, userName }) => {
               </>
             ) : (
               <li className="nav-item ms-lg-2">
-                <Link to="/login" className="btn btn-primary" onClick={() => setShowMenu(false)}>Sign In</Link>
+                <Link
+                  to="/login"
+                  className="btn btn-primary"
+                  onClick={() => setShowMenu(false)}
+                >
+                  Sign In
+                </Link>
               </li>
             )}
 

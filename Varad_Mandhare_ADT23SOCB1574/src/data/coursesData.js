@@ -14,7 +14,21 @@ export const coursesData = [
     image: 'https://picsum.photos/seed/ai/400/250',
     instructor: 'Dr. Sarah Chen',
     topics: ['Machine Learning', 'Neural Networks', 'Deep Learning', 'NLP'],
-    price: 99
+    price: 99,
+    resourcesData: {
+      videos: [
+        { title: 'AI Basics Explained', url: 'https://youtu.be/2ePf9rue1Ao' },
+        { title: 'Machine Learning Crash Course', url: 'https://youtu.be/GwIo3gDZCVQ' },
+      ],
+      articles: [
+        { title: 'What is AI? (IBM)', url: 'https://www.ibm.com/cloud/learn/what-is-artificial-intelligence' },
+        { title: 'Deep Learning Simplified', url: 'https://www.geeksforgeeks.org/deep-learning-introduction/' },
+      ],
+      books: [
+        { title: 'Deep Learning by Ian Goodfellow', url: 'https://www.deeplearningbook.org/' },
+        { title: 'Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow', url: 'https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/' },
+      ]
+    }
   },
   {
     id: 2,
@@ -29,7 +43,21 @@ export const coursesData = [
     image: 'https://picsum.photos/seed/photo/400/250',
     instructor: 'Mark Thompson',
     topics: ['Composition', 'Lighting', 'Editing', 'Portrait Photography'],
-    price: 79
+    price: 79,
+    resourcesData: {
+      videos: [
+        { title: 'Photography Tutorial for Beginners', url: 'https://youtu.be/7dJbn-k3jyo' },
+        { title: 'Lighting for Photography', url: 'https://youtu.be/O7jzAjV7iKk' },
+      ],
+      articles: [
+        { title: 'Guide to Composition', url: 'https://www.photographytalk.com/beginner-photography-tips' },
+        { title: 'Portrait Photography Tips', url: 'https://expertphotography.com/portrait-photography-tips/' },
+      ],
+      books: [
+        { title: 'Understanding Exposure', url: 'https://www.goodreads.com/book/show/141423.Understanding_Exposure' },
+        { title: 'The Digital Photography Book', url: 'https://www.amazon.com/Digital-Photography-Book-Part-World/dp/0133856886/' },
+      ]
+    }
   },
   {
     id: 3,
@@ -44,7 +72,21 @@ export const coursesData = [
     image: 'https://picsum.photos/seed/business/400/250',
     instructor: 'Jennifer Martinez',
     topics: ['Strategy', 'Growth Hacking', 'Market Analysis', 'Leadership'],
-    price: 129
+    price: 129,
+    resourcesData: {
+      videos: [
+        { title: 'Business Strategy for Beginners', url: 'https://youtu.be/bSYdx35Ut6k' },
+        { title: 'Scaling a Startup', url: 'https://youtu.be/T1PaNU6F_fY' },
+      ],
+      articles: [
+        { title: 'Growth Hacking Essentials', url: 'https://www.shopify.com/blog/growth-hacking' },
+        { title: 'Effective Business Leadership', url: 'https://www.inc.com/guides/leadership.html' },
+      ],
+      books: [
+        { title: 'Good to Great', url: 'https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996' },
+        { title: 'The Lean Startup', url: 'https://theleanstartup.com/book' },
+      ]
+    }
   },
   {
     id: 4,
@@ -59,7 +101,21 @@ export const coursesData = [
     image: 'https://picsum.photos/seed/webdev/400/250',
     instructor: 'Alex Johnson',
     topics: ['React', 'Node.js', 'MongoDB', 'API Development'],
-    price: 149
+    price: 149,
+    resourcesData: {
+      videos: [
+        { title: 'React Full Course', url: 'https://youtu.be/bMknfKXIFA8' },
+        { title: 'Node.js Tutorial for Beginners', url: 'https://youtu.be/TlB_eWDSMt4' },
+      ],
+      articles: [
+        { title: 'React Official Docs', url: 'https://react.dev/' },
+        { title: 'Node.js Guides', url: 'https://nodejs.dev/en/learn/' },
+      ],
+      books: [
+        { title: 'Eloquent JavaScript', url: 'https://eloquentjavascript.net/' },
+        { title: 'MongoDB: The Definitive Guide', url: 'https://www.oreilly.com/library/view/mongodb-the-definitive/9781491954454/' },
+      ]
+    }
   },
   {
     id: 5,
@@ -74,7 +130,21 @@ export const coursesData = [
     image: 'https://picsum.photos/seed/marketing/400/250',
     instructor: 'Emma Davis',
     topics: ['SEO', 'Social Media', 'Content Marketing', 'Analytics'],
-    price: 69
+    price: 69,
+    resourcesData: {
+      videos: [
+        { title: 'SEO for Beginners', url: 'https://youtu.be/8AZ8GqW5iak' },
+        { title: 'Digital Marketing Full Course', url: 'https://youtu.be/f1R5YUg3ibo' },
+      ],
+      articles: [
+        { title: 'Content Strategy Guide', url: 'https://contentmarketinginstitute.com/' },
+        { title: 'Google Analytics Basics', url: 'https://support.google.com/analytics/answer/1008015?hl=en' },
+      ],
+      books: [
+        { title: 'This Is Marketing by Seth Godin', url: 'https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830' },
+        { title: 'Digital Marketing For Dummies', url: 'https://www.amazon.com/Digital-Marketing-Dummies-Business-Personal/dp/1119660497' },
+      ]
+    }
   },
   {
     id: 6,
@@ -89,38 +159,22 @@ export const coursesData = [
     image: 'https://picsum.photos/seed/uxui/400/250',
     instructor: 'David Lee',
     topics: ['User Research', 'Wireframing', 'Prototyping', 'Figma'],
-    price: 89
+    price: 89,
+    resourcesData: {
+      videos: [
+        { title: 'UX/UI Crash Course', url: 'https://youtu.be/_XH16m2w_qw' },
+        { title: 'Figma for Beginners', url: 'https://youtu.be/ftkF2aRIzJU' },
+      ],
+      articles: [
+        { title: 'Design Thinking 101', url: 'https://www.ideou.com/blogs/inspiration/what-is-design-thinking' },
+        { title: 'UX Principles', url: 'https://www.nngroup.com/articles/ten-usability-heuristics/' },
+      ],
+      books: [
+        { title: 'Don’t Make Me Think', url: 'https://www.sensible.com/dmm.html' },
+        { title: 'The Design of Everyday Things', url: 'https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654' },
+      ]
+    }
   },
-  {
-    id: 7,
-    title: 'Data Science with Python',
-    category: 'Technology',
-    description: 'Master data analysis, visualization, and machine learning with Python.',
-    duration: '14 weeks',
-    level: 'Intermediate',
-    rating: 4.7,
-    students: 18500,
-    resources: 28,
-    image: 'https://picsum.photos/seed/datascience/400/250',
-    instructor: 'Dr. Michael Wong',
-    topics: ['Python', 'Pandas', 'Machine Learning', 'Data Visualization'],
-    price: 119
-  },
-  {
-    id: 8,
-    title: 'Mobile App Development',
-    category: 'Technology',
-    description: 'Build native mobile apps for iOS and Android using React Native.',
-    duration: '12 weeks',
-    level: 'Intermediate',
-    rating: 4.6,
-    students: 13400,
-    resources: 26,
-    image: 'https://picsum.photos/seed/mobile/400/250',
-    instructor: 'Lisa Anderson',
-    topics: ['React Native', 'iOS', 'Android', 'Mobile UI'],
-    price: 109
-  }
 ];
 
 export const myJourneyData = [

@@ -2,7 +2,9 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Video, Users, Award, Zap, Shield, Globe, TrendingUp, Star, ArrowRight } from 'lucide-react';
+import {
+  BookOpen, Video, Users, Award, Zap, Globe, TrendingUp, Star, ArrowRight
+} from 'lucide-react';
 import { coursesData } from '../data/coursesData';
 
 const Home = () => {
@@ -104,20 +106,24 @@ const Home = () => {
 
           <div className="row g-4">
             {[
-              { icon: <BookOpen size={32} color="#FFD700" />, title: 'Curated Content', desc: 'Hand-picked resources from top instructors and trusted platforms to ensure quality learning.' },
-              { icon: <TrendingUp size={32} color="#BA55D3" />, title: 'Track Progress', desc: 'Monitor your learning journey with detailed progress tracking and milestones.' },
-              { icon: <Zap size={32} color="#FFD700" />, title: 'Learn at Your Pace', desc: 'Flexible schedules that adapt to your lifestyle and commitments.' },
+              { icon: <BookOpen size={32} color="#FFD700" />, title: 'Curated Content', desc: 'Hand-picked resources from top instructors and trusted platforms.' },
+              { icon: <TrendingUp size={32} color="#BA55D3" />, title: 'Track Progress', desc: 'Monitor your learning journey with detailed progress tracking.' },
+              { icon: <Zap size={32} color="#FFD700" />, title: 'Learn at Your Pace', desc: 'Flexible schedules that fit your lifestyle.' },
               { icon: <Users size={32} color="#BA55D3" />, title: 'Expert Instructors', desc: 'Learn from industry professionals with real-world experience.' },
-              { icon: <Award size={32} color="#FFD700" />, title: 'Certificates', desc: 'Earn recognized certificates upon completion to boost your career prospects.' },
-              { icon: <Globe size={32} color="#BA55D3" />, title: 'Global Community', desc: 'Connect with learners worldwide and grow together in a supportive environment.' },
+              { icon: <Award size={32} color="#FFD700" />, title: 'Certificates', desc: 'Get recognized certificates to boost your career prospects.' },
+              { icon: <Globe size={32} color="#BA55D3" />, title: 'Global Community', desc: 'Connect with learners worldwide and grow together.' },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
                 <div
-                  className="card border-0 shadow-sm h-100 text-center hover-lift"
+                  className="card border-0 shadow-sm h-100 text-center"
                   style={{
-                    backgroundColor: 'white',
+                    borderRadius: '12px',
+                    transition: 'all 0.3s ease-in-out',
+                    cursor: 'pointer',
                     borderTop: `4px solid ${index % 2 === 0 ? '#FFD700' : '#BA55D3'}`,
                   }}
+                  onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-6px)'}
+                  onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                 >
                   <div className="card-body p-4">
                     <div className="mb-3">{feature.icon}</div>
@@ -162,11 +168,21 @@ const Home = () => {
           <div className="row g-4">
             {featuredCourses.map((course) => (
               <div key={course.id} className="col-md-4">
-                <div className="card shadow-sm h-100 border-0">
+                <div
+                  className="card shadow-sm h-100 border-0"
+                  style={{
+                    borderRadius: '16px',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-6px)'}
+                  onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                >
                   <img
                     src={course.image}
                     className="card-img-top"
                     alt={course.title}
+                    style={{ height: '180px', objectFit: 'cover', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}
                   />
                   <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center mb-2">
@@ -201,7 +217,7 @@ const Home = () => {
                         </span>
                       </div>
                       <span className="fw-bold fs-5" style={{ color: '#4B0082' }}>
-                        ₹{course.price}
+                        Free
                       </span>
                     </div>
                   </div>
