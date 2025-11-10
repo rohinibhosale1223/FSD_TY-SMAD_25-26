@@ -1,0 +1,87 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ff6347;
+}
+
+.email {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.profile-actions button {
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  margin: 8px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-actions button:hover {
+  background-color: #e74c3c;
+}
+
+.order-history, .preferences {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.order-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-history li {
+  background: #f8f8f8;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.edit-form input {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #219150;
+}

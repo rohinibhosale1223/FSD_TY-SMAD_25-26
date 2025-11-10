@@ -1,0 +1,174 @@
+.checkout-page {
+  background: #fafafa;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-container {
+  width: 90%;
+  max-width: 550px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.checkout-container h2 {
+  color: #333;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.checkout-form textarea {
+  resize: none;
+  height: 70px;
+}
+
+.btn-confirm {
+  margin-top: 20px;
+  width: 100%;
+  background: #ff7f50;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-confirm:hover {
+  background: #ff6347;
+}
+
+.receipt-modern {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.receipt-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e67e22;
+  text-align: center;
+}
+
+.receipt-tagline {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.receipt-section {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.receipt-section h3 {
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.receipt-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.receipt-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.receipt-total {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.thank-you {
+  text-align: center;
+  margin-top: 15px;
+  font-style: italic;
+  color: #27ae60;
+}
+
+.download-btn {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-btn:hover {
+  background: #cf6d17;
+}
+
+
+.thank-note {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+.btn-download {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  background: #388e3c;
+}

@@ -1,0 +1,93 @@
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(255, 243, 230, 0.95),
+      rgba(255, 220, 200, 0.9)
+    ),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+.auth-page h2 {
+  color: #2b2b2b;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  background-color: #ffe5e5;
+  color: #ff4d4d;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.auth-page form {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.auth-page label {
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.auth-page input {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-page input:focus {
+  border-color: #ff914d;
+  box-shadow: 0 0 6px rgba(255, 145, 77, 0.3);
+}
+
+.btn {
+  background: #ff914d;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #ff7a1f;
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
