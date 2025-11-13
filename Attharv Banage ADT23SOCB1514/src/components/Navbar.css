@@ -1,0 +1,14 @@
+.custom-navbar {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-size: 26px !important;
+}
+
+.nav-link {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}

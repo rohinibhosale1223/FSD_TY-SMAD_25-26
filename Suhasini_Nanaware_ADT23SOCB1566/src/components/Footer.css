@@ -1,0 +1,24 @@
+.footer {
+  background: rgb(234, 214, 188);
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ff9966;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff5e62;
+}

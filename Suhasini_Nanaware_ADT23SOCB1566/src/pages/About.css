@@ -1,0 +1,54 @@
+.text-brown {
+  color: #4e342e;
+}
+.text-accent {
+  color: #ff8c42;
+}
+
+.btn-accent {
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+.btn-accent:hover {
+  background-color: #ff6f00;
+  color: #fff;
+}
+
+.about-page {
+  background-color: #fffaf3;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 420px;         
+  height: 320px;            
+  border-radius: 20px;
+  background-image: url("https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  transition: none;          
+}
+.mission-section {
+  background: #fff8f0;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.team-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.closing-note {
+  background-color: #fff3e0;
+}
