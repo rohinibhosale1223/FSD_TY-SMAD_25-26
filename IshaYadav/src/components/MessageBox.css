@@ -1,0 +1,19 @@
+.msg-box {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: white;
+  animation: fadeIn 0.4s ease;
+}
+
+.msg-box.success { background: #4caf50; }
+.msg-box.error { background: #f44336; }
+.msg-box.info { background: #0078d7; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
